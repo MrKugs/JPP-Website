@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPP Team</title>
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="Home.html" class="logo">JPP</a>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="Organisation.html">Our Team</a>
+                <a href="Registration.html">Register</a>
+                <a href="Admin.html">Admin</a>
+            </div>
+            <button class="hamburger" title="Toggle navigation">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+
+    <header class="org-header">
+        <div class="header-content">
+            <h1 class="title-animate">Meet Our Team</h1>
+            <p class="subtitle-animate">The passionate people behind JPP</p>
+        </div>
+    </header>
+
+    <main class="organization-page">
+        <section class="about-section slide-up">
+            <h2>About JPP</h2>
+            <p>student representative committee(JPP) is a student-run organization dedicated to providing professional development opportunities through workshops,
+                 networking events, and hands-on projects. Our team consists of dedicated students who volunteer their time to create meaningful experiences for their
+                  peers.</p>
+        </section>
+
+        <section class="team-section">
+            <h2 class="section-title slide-in">Our Core Team</h2>
+            <div class="team-tabs">
+                <button class="tab-button active" data-team="executive">YANG DI PERTUA</button>
+                <button class="tab-button" data-team="technical">NAIB YANG DI PERTUA </button>
+                <button class="tab-button" data-team="marketing">SETIAUSAHA</button>
+                <button class="tab-button" data-team="logistics">BENDAHARI</button>
+            </div>
+
+            <div class="team-members" id="executive-team">
+                <div class="team-members-wrapper"></div>
+                <!-- Filled by JavaScript -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="JPP.js"></script>
+</body>
+</html>

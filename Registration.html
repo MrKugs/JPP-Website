@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for JPP Events</title>
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="Home.html" class="logo">JPP</a>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="Organisation.html">Our Team</a>
+                <a href="Registration.html">Register</a>
+                <a href="Admin.html">Admin</a>
+            </div>
+            <button class="hamburger" title="Toggle navigation menu">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+
+    <main class="registration-page">
+        <div class="registration-container">
+            <div class="registration-form slide-up">
+                <h1>Register for JPP Events</h1>
+                <p>Fill out the form below to register for our upcoming events</p>
+                
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="university">University/School</label>
+                        <input type="text" id="university" name="university" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="major">Major/Field of Study</label>
+                        <input type="text" id="major" name="major">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event">Select Event</label>
+                        <select id="event" name="event" required>
+                            <option value="">-- Select an Event --</option>
+                            <!-- Filled by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>How did you hear about us?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="hearAbout" value="social"> Social Media</label>
+                            <label><input type="radio" name="hearAbout" value="friend"> Friend</label>
+                            <label><input type="radio" name="hearAbout" value="email"> Email</label>
+                            <label><input type="radio" name="hearAbout" value="other"> Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Additional Comments</label>
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button pulse">Submit Registration</button>
+                </form>
+            </div>
+            
+            <div class="registration-sidebar slide-in-right">
+                <div class="sidebar-card">
+                    <h3>Why Register?</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Secure your spot in popular events</li>
+                        <li><i class="fas fa-check-circle"></i> Get event reminders</li>
+                        <li><i class="fas fa-check-circle"></i> Access to exclusive materials</li>
+                        <li><i class="fas fa-check-circle"></i> Networking opportunities</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Upcoming Events</h3>
+                    <div class="upcoming-events" id="sidebar-events">
+                        <!-- Filled by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering. We've sent a confirmation email with event details.</p>
+            <button class="modal-button pulse">Back to Events</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="JPP.js"></script>
+</body>
+</html>

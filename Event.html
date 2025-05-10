@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPP Event Details</title>
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="JPP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="Home.html" class="logo">JPP</a>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="Organisation.html">Our Team</a>
+                <a href="Registration.html">Register</a>
+                <a href="Admin.html">Admin</a>
+            </div>
+            <button class="hamburger" title="Toggle navigation">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+
+    <main class="event-details">
+        <div class="event-hero">
+            <div class="hero-content">
+                <h1 class="title-animate" id="event-title">Event Title</h1>
+                <div class="event-meta fade-in">
+                    <span><i class="fas fa-calendar-alt"></i> <span id="event-date">Loading...</span></span>
+                    <span><i class="fas fa-map-marker-alt"></i> <span id="event-location">Loading...</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-container">
+            <div class="event-main">
+                <div class="event-description slide-up">
+                    <h2>About This Event</h2>
+                    <p id="event-description">Loading description...</p>
+                </div>
+
+                <div class="event-schedule slide-up">
+                    <h2>Schedule</h2>
+                    <ul id="event-schedule">
+                        <!-- Filled by JavaScript -->
+                    </ul>
+                </div>
+
+                <div class="event-speakers slide-up">
+                    <h2>Speakers & Facilitators</h2>
+                    <div class="speakers-grid" id="event-speakers">
+                        <!-- Filled by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <aside class="event-sidebar">
+                <div class="sidebar-card sticky-card slide-in-right">
+                    <h3>Event Details</h3>
+                    <div class="details-list">
+                        <p><strong>Date:</strong> <span id="sidebar-date">Loading...</span></p>
+                        <p><strong>Time:</strong> <span id="sidebar-time">Loading...</span></p>
+                        <p><strong>Location:</strong> <span id="sidebar-location">Loading...</span></p>
+                        <p><strong>Seats Available:</strong> <span id="sidebar-seats">Loading...</span></p>
+                    </div>
+                    <a href="Registration.html" class="cta-button pulse">Register Now</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="JPP.js"></script>
+    <script>
+        // Load specific event data based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventId = urlParams.get('id');
+        });
+    </script>
+</body>
+</html>
